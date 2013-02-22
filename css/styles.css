@@ -1,10 +1,15 @@
 .container {
-	width: 93.5%;
-	padding: 3.25%;
-	max-width: 1024px; 
-	background: yellow;
+	width: 100%;
+	background: #e7dfa4;
 	float: left;
+	overflow: hidden;
+}
 
+article {
+	float: left;
+	width: 93.6%;
+	padding: 3.25%;
+	font-family: 'GriffosFontRegular';
 }
 
 header {
@@ -17,13 +22,15 @@ header {
 nav {
 	background: #443505;
 	float: left;
-	width: 100%;
+	width: 94%;
+	padding: 3.25%;
 	border-top: 10px solid #ffbb00;
 }
 
 
 nav ul {
-	
+	display: block;
+	float: left;
 }
 
 nav ul li {
@@ -31,14 +38,56 @@ nav ul li {
 }
 
 nav ul li a {
-	background: none;
-	display: block;
-	padding: 1em 2em;
-	float: left;
+	padding: 2.5% 1em 2.5% 0;
 	text-decoration: none;
 	color: #f5d313;
 	font-size: 1.5em;
-	transition: all 1s;
+	font-family: 'KingthingsCalligraphica2Rg', serif;
+}
+
+nav ul li a span {
+	font-size: .8em;
+	margin:  0 .35em 0 0;
+
+}
+
+.socialmedia {
+	float: right;
+}
+
+/** Typography **/
+h1, h2, h3, h4, h5, h6 { 
+
+}
+
+h1 {
+	font-family: 'KingthingsCalligraphica2Rg', serif;
+	font-size: 2.5em;	
+}
+
+h2 {
+
+}
+
+h3 {
+	
+}
+
+h4 {
+	
+}
+
+h5 {
+	
+}
+
+h6 {
+	
+}
+
+p {
+	margin:  0 0 2% 0;
+	line-height: 1.25em;
 }
 
 
