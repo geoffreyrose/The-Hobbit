@@ -1,15 +1,20 @@
 .container {
 	width: 100%;
-	background: #e7dfa4;
 	float: left;
 	overflow: hidden;
 }
 
 article {
+	background: #e8e0a4;
 	float: left;
-	width: 93.6%;
-	padding: 3.25%;
+	width: 94%;
+	padding: 0 3.25%;
 	font-family: 'GriffosFontRegular';
+	overflow: hidden;
+}
+
+.content_loading_container {
+		padding: 3.25% 0;
 }
 
 header {
@@ -20,12 +25,13 @@ header {
 }
 
 nav {
-	background: #443505;
+	background: #272007;
 	float: left;
 	width: 94%;
 	padding: 3.25%;
 	border-top: 10px solid #ffbb00;
 }
+
 
 
 nav ul {
@@ -53,6 +59,11 @@ nav ul li a span {
 
 .socialmedia {
 	float: right;
+}
+
+.socialmedia li a {
+	float: right;
+	padding: 2.5% .125em;
 }
 
 /** Typography **/
@@ -93,9 +104,20 @@ p {
 
 
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+	.content_container {
+		height: 650px;
+			
+	}
 	
+		
 }
 
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	
+	.content_container {
+		height: 966px;
+	
+	}
 	
 }

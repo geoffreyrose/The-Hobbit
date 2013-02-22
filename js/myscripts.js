@@ -1,8 +1,13 @@
+var myScroll;
+function loaded() {
+	myScroll = new iScroll('scroll',{checkDOMChanges:true});
+}
+
+document.addEventListener('DOMContentLoaded', loaded, false);
+
 $(document).ready(function(){
 
 	document.addEventListener('touchmove', function(e){ e.preventDefault(); }, false);
-	
-	
 	
 	$('nav ul li a').on('touchstart', function(){
 		changePage($(this).attr('data-file'));
