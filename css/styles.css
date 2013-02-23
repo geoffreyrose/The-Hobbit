@@ -68,15 +68,19 @@ nav ul li a span {
 
 /** Typography **/
 h1, h2, h3, h4, h5, h6 { 
+font-family: 'KingthingsCalligraphica2Rg', serif;
+
 
 }
 
 h1 {
-	font-family: 'KingthingsCalligraphica2Rg', serif;
-	font-size: 2.5em;	
+	font-size: 3.5em;
+	margin: 0 0 .2em 0;	
 }
 
 h2 {
+	font-size: 2.0em;
+	margin: 1em 0 .25em 0;
 
 }
 
@@ -97,19 +101,51 @@ h6 {
 }
 
 p {
+	font-size: 1.25;
 	margin:  0 0 2% 0;
-	line-height: 1.25em;
+	line-height: 1.6em;
+
 }
 
 .characters li {
 	display: block;
-	padding: .5em 0;	
+	
+		
 }
 
 .characters li a {
 	font-size: 1.5em;
+	width: 31.3%;
+	float: left;
+	margin: 0 3% 2% 0;
+	text-align: center;
+	
 }
 
+.characters li:nth-of-type(3n) a {
+	margin-right: 0;
+}
+.characters li a span {
+	overflow: hidden;
+	height: 150px;
+	display: block;
+	
+}
+.characters li a img {
+	width: 100%;
+	clear: both;
+}
+ 
+
+.charimg {
+		width: 25%;
+		margin: 0 2% 2% 0;
+		float: left;
+	}
+	
+video {
+	margin: 2.5%;
+}
 
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
 
@@ -117,6 +153,7 @@ p {
 		height: 650px;
 			
 	}
+	
 	
 		
 }

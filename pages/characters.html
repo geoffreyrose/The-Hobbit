@@ -1,4 +1,9 @@
 <script type="text/javascript">
+
+var myScroll;
+function loaded() {
+	myScroll = new iScroll('scroll',{checkDOMChanges:true});
+}
 	
 $(document).ready(function(){
 
@@ -18,23 +23,24 @@ function changeCharacters(CharName){
 	});
 }
 </script>
+
 <h1>Characters</h1>
 	<ul class="characters">
-		<li><a data-characters="thorin.html?v=1">Thorin Oakenshield</a></li>
-		<li><a data-characters="gandalf.html?v=1">Gandalf</a></li>
-		<li><a data-characters="bilbo.html?v=1">Bilbo Baggins</a></li>
-		<li><a data-characters="balin.html?v=1">Balin</a></li>
-		<li><a data-characters="bifur.html?v=1">Bifur</a></li>
-		<li><a data-characters="bofur.html?v=1">Bofur</a></li>
-		<li><a data-characters="bombur.html?v=1">Bombur</a></li>
-		<li><a data-characters="dori.html?v=1">Dori</a></li>
-		<li><a data-characters="dwalin.html?v=1">Dwalin</a></li>
-		<li><a data-characters="fili.html?v=1">Fíli</a></li>
-		<li><a data-characters="gloin.html?v=1">Glóin</a></li>
-		<li><a data-characters="kili.html?v=1">Kíli</a></li>
-		<li><a data-characters="nori.html?v=1">Nori</a></li>
-		<li><a data-characters="oin.html?v=1">Óin</a></li>
-		<li><a data-characters="ori.html?v=1">Ori</a></li>
+		<li><a data-characters="thorin.html?v=1"><span><img src="img/characters/thorin.jpg" alt="Thorin the Dwarf" /></span>Thorin Oakenshield</a></li>
+		<li><a data-characters="gandalf.html?v=1"><span><img src="img/characters/gandalf.jpg" alt="Gandalf the Wizard" /></span>Gandalf</a></li>
+		<li><a data-characters="bilbo.html?v=1"><span><img src="img/characters/bilbo.jpg" alt="Bilbo the Hobbit" /></span>Bilbo Baggins</a></li>
+		<li><a data-characters="balin.html?v=1"><span><img src="img/characters/balin.jpg" alt="Balin the Dwarf" /></span>Balin</a></li>
+		<li><a data-characters="bifur.html?v=1"><span><img src="img/characters/bifur.jpg" alt="Bifur the Dwarf" /></span>Bifur</a></li>
+		<li><a data-characters="bofur.html?v=1"><span><img src="img/characters/bofur.jpg" alt="Bofur the Dwarf" /></span>Bofur</a></li>
+		<li><a data-characters="bombur.html?v=1"><span><img src="img/characters/bombur.jpg" alt="Bombur the Dwarf" /></span>Bombur</a></li>
+		<li><a data-characters="dori.html?v=1"><span><img src="img/characters/dori.jpg" alt="Dori the Dwarf" /></span>Dori</a></li>
+		<li><a data-characters="dwalin.html?v=1"><span><img src="img/characters/dwalin.jpg" alt="Dwalin the Dwarf" /></span>Dwalin</a></li>
+		<li><a data-characters="fili.html?v=1"><span><img src="img/characters/fili.jpg" alt="Fili the Dwarf" /></span>Fíli</a></li>
+		<li><a data-characters="gloin.html?v=1"><span><img src="img/characters/gloin.jpg" alt="Gloin the Dwarf" /></span>Glóin</a></li>
+		<li><a data-characters="kili.html?v=1"><span><img src="img/characters/kili.jpg" alt="Kili the Dwarf" /></span>Kíli</a></li>
+		<li><a data-characters="nori.html?v=1"><span><img src="img/characters/nori.jpg" alt="Nori the Dwarf" /></span>Nori</a></li>
+		<li><a data-characters="oin.html?v=1"><span><img src="img/characters/oin.jpg" alt="Oin the Dwarf" /></span>Óin</a></li>
+		<li><a data-characters="ori.html?v=1"><span><img src="img/characters/ori.jpg" alt="Ori the Dwarf" /></span>Ori</a></li>
 	</ul>
 
 
