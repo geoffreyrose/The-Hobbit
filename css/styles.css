@@ -101,6 +101,14 @@ p {
 	line-height: 1.25em;
 }
 
+.characters li {
+	display: block;
+	padding: .5em 0;	
+}
+
+.characters li a {
+	font-size: 1.5em;
+}
 
 
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {

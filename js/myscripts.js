@@ -12,6 +12,7 @@ $(document).ready(function(){
 	$('nav ul li a').on('touchstart', function(){
 		changePage($(this).attr('data-file'));
 		});
+	
 		
 	$('nav ul li:first-of-type a').trigger('touchstart');
 	
@@ -27,3 +28,4 @@ function changePage(fileName){
 		});
 	});
 }
+

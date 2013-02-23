@@ -1,1 +1,40 @@
+<script type="text/javascript">
+	
+$(document).ready(function(){
+
+	$('ul.characters li a').on('touchstart', function(){
+		changeCharacters($(this).attr('data-characters'));
+		});
+	
+
+});
+
+function changeCharacters(CharName){
+	$('.content_container').animate({opacity:0}, 500, function(){
+		// load content
+		$('.content_loading_container').load('pages/characters/'+CharName, function(){
+			$('.content_container').delay(250).animate({opacity:1}, 500);
+		});
+	});
+}
+</script>
 <h1>Characters</h1>
+	<ul class="characters">
+		<li><a data-characters="thorin.html?v=1">Thorin Oakenshield</a></li>
+		<li><a data-characters="gandalf.html?v=1">Gandalf</a></li>
+		<li><a data-characters="bilbo.html?v=1">Bilbo Baggins</a></li>
+		<li><a data-characters="balin.html?v=1">Balin</a></li>
+		<li><a data-characters="bifur.html?v=1">Bifur</a></li>
+		<li><a data-characters="bofur.html?v=1">Bofur</a></li>
+		<li><a data-characters="bombur.html?v=1">Bombur</a></li>
+		<li><a data-characters="dori.html?v=1">Dori</a></li>
+		<li><a data-characters="dwalin.html?v=1">Dwalin</a></li>
+		<li><a data-characters="fili.html?v=1">Fíli</a></li>
+		<li><a data-characters="gloin.html?v=1">Glóin</a></li>
+		<li><a data-characters="kili.html?v=1">Kíli</a></li>
+		<li><a data-characters="nori.html?v=1">Nori</a></li>
+		<li><a data-characters="oin.html?v=1">Óin</a></li>
+		<li><a data-characters="ori.html?v=1">Ori</a></li>
+	</ul>
+
+
