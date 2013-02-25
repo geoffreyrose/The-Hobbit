@@ -1,1 +1,45 @@
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$('.thumbnail a img').on('touchstart', function(){
+			$('.bigimage img').attr('src',$(this).attr('src')).addClass('galleryviewer');
+			$('.thumbnails a img').removeClass('selected');
+			$(this).addClass('selected');
+			$('.thumbnails .caption').html($(this).parent().find('.caption_text').html());
+		});
+		
+		$('.thumbnail a img:first-of-type').trigger('touchstart');
+	});
+</script>
+	
 <h1>Gallery</h1>
+<section class="gallery">
+	<aside class="bigimage">
+		<img />
+	</aside>
+	<aside class="thumbnail">
+		<a href="#"><img src="img/gallery/hobbit001.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit002.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit003.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit004.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit005.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit006.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit007.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit008.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit009.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit010.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit011.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit012.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit013.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit014.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit015.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit016.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit017.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit018.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit019.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit020.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit021.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit022.jpg" /></a>
+		<a href="#"><img src="img/gallery/hobbit023.jpg" /></a>
+	</aside>
+</section>

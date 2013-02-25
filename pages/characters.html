@@ -7,7 +7,7 @@ function loaded() {
 	
 $(document).ready(function(){
 
-	$('ul.characters li a').on('touchstart', function(){
+	$('ul.characters li a').on('click', function(){
 		changeCharacters($(this).attr('data-characters'));
 		});
 	

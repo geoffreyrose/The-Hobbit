@@ -15,6 +15,7 @@ article {
 
 .content_loading_container {
 		padding: 3.25% 0;
+		float: left;
 }
 
 header {
@@ -147,10 +148,47 @@ video {
 	margin: 2.5%;
 }
 
+/** Gallery **/
+
+section.gallery {
+	float: left;
+}
+
+section.gallery aside {
+	float: left;
+}
+
+section.gallery aside a {
+	width: 15%;
+	margin: 2.5%;
+	height: 50px;
+	overflow: hidden;
+	float: left;
+}
+
+section.gallery aside a img {
+	width: 100%;
+	float: left;
+}
+
+.bigimages {
+	float: left;
+	width: 900px;
+	overflow: hidden;
+}
+.bigimages img {
+	float: left;
+}
+
+.galleryviewer {
+	width: 100%;
+}
+
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
 
 	.content_container {
 		height: 650px;
+		float: left;
 			
 	}
 	
@@ -165,4 +203,12 @@ video {
 	
 	}
 	
+	section.gallery aside a {
+		width: 20%;
+		margin: 2.5%;
+		height: 100px;
+		overflow: hidden;
+		float: left;
+	}
+
 }
