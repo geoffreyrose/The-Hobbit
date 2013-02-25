@@ -1,14 +1,14 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 
-		$('.thumbnail a img').on('touchstart', function(){
+		$('.thumbnail a img').on('click', function(){
 			$('.bigimage img').attr('src',$(this).attr('src')).addClass('galleryviewer');
 			$('.thumbnails a img').removeClass('selected');
 			$(this).addClass('selected');
 			$('.thumbnails .caption').html($(this).parent().find('.caption_text').html());
 		});
 		
-		$('.thumbnail a img:first-of-type').trigger('touchstart');
+		$('.thumbnail a img:first-of-type').trigger('click');
 	});
 </script>
 	

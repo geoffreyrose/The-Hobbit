@@ -144,10 +144,6 @@ p {
 		float: left;
 	}
 	
-video {
-	margin: 2.5%;
-}
-
 /** Gallery **/
 
 section.gallery {
@@ -173,8 +169,6 @@ section.gallery aside a img {
 
 .bigimages {
 	float: left;
-	width: 900px;
-	overflow: hidden;
 }
 .bigimages img {
 	float: left;
@@ -184,6 +178,61 @@ section.gallery aside a img {
 	width: 100%;
 }
 
+/** Cast **/
+
+section.cast {
+	float: left;
+}
+
+section.cast ul {
+	float: left;
+}
+
+section.cast ul li {
+	margin: 0 0 1em 0;
+	display: block;
+}
+
+section.cast ul li a {
+	text-decoration: none;
+	color: #f00;
+}
+
+/** Home **/
+
+section.home {
+	float: left;
+}
+
+section.home img {
+	margin: 10% 15% 0% 15%;
+	width: 70%;
+}
+
+section.home p {
+	margin: 0 15%;
+	width: 70%;
+	font-size: 1.5em;
+	text-align: center;
+	
+}
+
+/** Videos **/
+section.video {
+	float: left;
+	width: 100%;
+}
+	
+section.video video {
+	float: left;
+	width: 45%;
+}
+
+section.video video:first-of-type {
+	margin: 0 5% 0 0;
+}
+
+
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
 
 	.content_container {
@@ -192,8 +241,6 @@ section.gallery aside a img {
 			
 	}
 	
-	
-		
 }
 
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
@@ -205,10 +252,10 @@ section.gallery aside a img {
 	
 	section.gallery aside a {
 		width: 20%;
-		margin: 2.5%;
-		height: 100px;
-		overflow: hidden;
-		float: left;
 	}
+	
+	section.home img {
+		margin: 30% 15% 0% 15%;
+}
 
 }

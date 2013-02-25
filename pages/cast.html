@@ -1,18 +1,47 @@
+<script type="text/javascript">
+
+var myScroll;
+function loaded() {
+	myScroll = new iScroll('scroll',{checkDOMChanges:true});
+}
+	
+$(document).ready(function(){
+
+	$('.cast ul li a').on('click', function(){
+		changeCharacters($(this).attr('data-characters'));
+		});
+	
+
+});
+
+function changeCharacters(CharName){
+	$('.content_container').animate({opacity:0}, 500, function(){
+		// load content
+		$('.content_loading_container').load('pages/characters/'+CharName, function(){
+			$('.content_container').delay(250).animate({opacity:1}, 500);
+		});
+	});
+}
+</script>
+
 <h1>Cast</h1>
-<ul>
-	<li><a href="">Richard Armitage</a></li>
-	<li><a href="">Ian McKellen</a></li>
-	<li><a href="">Martin Freeman</a></li>
-	<li><a href="">Ken Stott</a></li>
-	<li><a href="">William Kircher</a></li>
-	<li><a href="">James Nesbitt</a></li>
-	<li><a href="">Graham McTavish</a></li>
-	<li><a href="">Stephen Hunter</a></li>
-	<li><a href="">Mark Hadlow</a></li>
-	<li><a href="">Dean O'Gorman</a></li>
-	<li><a href="">Peter Hambleton</a></li>
-	<li><a href="">Aidan Turner</a></li>
-	<li><a href="">Jed Brophy</a></li>
-	<li><a href="">John Callen</a></li>
-	<li><a href="">Adam Brown</a></li>
+<section class="cast">
+	<ul>
+		<li>Richard Armitage as <a data-characters="thorin.html?v=1">Thorin</a></li>
+		<li>Ian McKellen as <a data-characters="gandalf.html?v=1">Gandalf</a></li>
+		<li>Martin Freeman as <a data-characters="bilbo.html?v=1">Bilbo</a></li>
+		<li>Ken Stott as <a data-characters="balin.html?v=1">Balin</a></li>
+		<li>William Kircher as <a data-characters="bifur.html?v=1">Bifur</a></li>
+		<li>James Nesbitt as <a data-characters="bofur.html?v=1">Bofur</a></li>
+		<li>Stephen Hunter as <a data-characters="bombur.html?v=1">Bombur</a></li>
+		<li>Mark Hadlow as <a data-characters="dori.html?v=1">Dori</a></li>
+		<li>Graham McTavish as <a data-characters="dwalin.html?v=1">Dwalin</a></li>
+		<li>Dean O'Gorman as <a data-characters="fili.html?v=1">Fili</a></li>
+		<li>Peter Hambleton as <a data-characters="gloin.html?v=1">Gloin</a></li>
+		<li>Aidan Turner as <a data-characters="kili.html?v=1">Kili</a></li>
+		<li>Jed Brophy as <a data-characters="nori.html?v=1">Nori</a></li>
+		<li>John Callen as <a data-characters="oin.html?v=1">Oin</a></li>
+		<li>Adam Brown as <a data-characters="ori.html?v=1">Ori</a></li>
 </ul>
+
+</section>
