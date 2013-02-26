@@ -16,6 +16,7 @@ article {
 .content_loading_container {
 		padding: 3.25% 0;
 		float: left;
+		width: 93.5%
 }
 
 header {
@@ -106,6 +107,10 @@ p {
 	margin:  0 0 2% 0;
 	line-height: 1.6em;
 
+}
+
+.characters {
+	width: 100%;
 }
 
 .characters li {
@@ -238,8 +243,9 @@ section.video video:first-of-type {
 	.content_container {
 		height: 650px;
 		float: left;
-			
+		width: 1024px;		
 	}
+	
 	
 }
 
@@ -247,7 +253,10 @@ section.video video:first-of-type {
 	
 	.content_container {
 		height: 966px;
+		width: 768px;
+	}
 	
+	content_loading_container {
 	}
 	
 	section.gallery aside a {
