@@ -19,6 +19,10 @@ article {
 		width: 93.5%
 }
 
+section {
+	float: left;
+}
+
 header {
 	position: absolute;
 	left: 0;
@@ -135,6 +139,7 @@ p {
 	overflow: hidden;
 	height: 150px;
 	display: block;
+	margin: 0 0 .2em 0;
 	
 }
 .characters li a img {
@@ -148,11 +153,16 @@ p {
 		margin: 0 2% 2% 0;
 		float: left;
 		border: 2px solid #ffbb00;
+		border-bottom: none;
+		-webkit-box-reflect: below -2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.8, transparent), to(white));
+		
 	}
 	
 table.charinfo {
 	clear: both;
 	width: 100%;
+	margin: 5em 0 0 0;
+	float: left
 }
 
 table.charinfo thead {
@@ -246,7 +256,6 @@ section.videos video {
 	float: left;
 	margin: 4%;
 	-webkit-box-reflect: below 5% -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.6, transparent), to(white));
-	box-reflect: below 5% gradient(linear, left top, left bottom, from(transparent), color-stop(0.55, transparent), to(white));
 }
 
 
@@ -268,7 +277,8 @@ section.videos video {
 		width: 768px;
 	}
 	
-	content_loading_container {
+	section.videos video {
+		margin: 4% 23%;
 	}
 	
 	section.gallery aside a {
