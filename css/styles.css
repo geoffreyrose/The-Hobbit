@@ -103,12 +103,12 @@ h6 {
 }
 
 p {
-	font-size: 1.25;
+	font-size: 1.25em;
 	margin:  0 0 2% 0;
 	line-height: 1.6em;
 
 }
-
+/***************** Characters *****************/
 .characters {
 	width: 100%;
 }
@@ -147,9 +147,42 @@ p {
 		width: 25%;
 		margin: 0 2% 2% 0;
 		float: left;
+		border: 2px solid #ffbb00;
 	}
 	
-/** Gallery **/
+table.charinfo {
+	clear: both;
+	width: 100%;
+}
+
+table.charinfo thead {
+	background: #000;
+	color: #ffbb00;
+	text-align: left;
+}	
+
+table.charinfo thead tr th {
+	padding: .5em;	
+	width: 25%;
+	font-size: 1.25em;
+}
+
+
+table.charinfo tbody {
+	background: #aaa;
+	color: #000;
+	text-align: left;
+}	
+
+table.charinfo tbody tr td {
+	padding: .5em;	
+	width: 25%;
+	font-size: 1.25em;
+}
+
+
+
+/***************** Gallery *****************/
 
 section.gallery {
 	float: left;
@@ -183,27 +216,8 @@ section.gallery aside a img {
 	width: 100%;
 }
 
-/** Cast **/
 
-section.cast {
-	float: left;
-}
-
-section.cast ul {
-	float: left;
-}
-
-section.cast ul li {
-	margin: 0 0 1em 0;
-	display: block;
-}
-
-section.cast ul li a {
-	text-decoration: none;
-	color: #f00;
-}
-
-/** Home **/
+/***************** Home *****************/
 
 section.home {
 	float: left;
@@ -222,19 +236,17 @@ section.home p {
 	
 }
 
-/** Videos **/
-section.video {
+/***************** Videos *****************/
+section.videos {
 	float: left;
 	width: 100%;
 }
 	
-section.video video {
+section.videos video {
 	float: left;
-	width: 45%;
-}
-
-section.video video:first-of-type {
-	margin: 0 5% 0 0;
+	margin: 4%;
+	-webkit-box-reflect: below 5% -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.6, transparent), to(white));
+	box-reflect: below 5% gradient(linear, left top, left bottom, from(transparent), color-stop(0.55, transparent), to(white));
 }
 
 
