@@ -13,7 +13,8 @@ window.onload = function() {
 			'icon-home' : '&#xe004;',
 			'icon-file' : '&#xe005;',
 			'icon-facebook' : '&#xe006;',
-			'icon-twitter' : '&#xe007;'
+			'icon-twitter' : '&#xe007;',
+			'icon-github' : '&#xe008;'
 		},
 		els = document.getElementsByTagName('*'),
 		i, attr, html, c, el;

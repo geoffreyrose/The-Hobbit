@@ -1,17 +1,3 @@
-<script type="text/javascript">
-	$(document).ready(function() {
-
-		$('.thumbnail a img').on('click', function(){
-			$('.bigimage img').attr('src',$(this).attr('src')).addClass('galleryviewer');
-			$('.thumbnails a img').removeClass('selected');
-			$(this).addClass('selected');
-			$('.thumbnails .caption').html($(this).parent().find('.caption_text').html());
-		});
-		
-		$('.thumbnail a img:first-of-type').trigger('click');
-	});
-</script>
-	ß
 <section class="gallery">
 	<aside class="bigimage">
 		<img />
@@ -42,3 +28,14 @@
 		<a href="#"><img src="img/gallery/hobbit023.jpg" /></a>
 	</aside>
 </section>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$('.thumbnail a img').on('click', function(){
+			$('.bigimage img').attr('src',$(this).attr('src')).addClass('galleryviewer');
+		});
+		
+		$('.thumbnail a img:first-of-type').trigger('click');
+	});
+</script>
