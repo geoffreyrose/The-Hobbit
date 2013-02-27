@@ -1,3 +1,7 @@
+body {
+	background: #e8e0a4;
+}
+
 .container {
 	width: 100%;
 	margin: 0 auto;
@@ -20,6 +24,9 @@ article {
 		width: 93.5%
 }
 
+section {
+	margin: 1em 0;
+}
 
 
 header {
@@ -29,10 +36,11 @@ header {
 nav {
 	background:
 		-webkit-linear-gradient(top, #38300a 0%, #272000 50.66%);
-	float: left;
-	width: 94%;
+		max-width: 1000px;
+	width: 93.5%;
 	padding: 3.25%;
 	border-bottom: 10px solid #ffbb00;
+	margin: 0 auto;
 	
 }
 
@@ -131,7 +139,6 @@ p {
 	
 }
 
-
 .characters li span {
 	overflow: hidden;
 	height: 125px;
@@ -153,7 +160,6 @@ p {
 	border: 2px solid #ffbb00;
 	border-bottom: none;
 	-webkit-box-reflect: below -2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.8, transparent), to(white));
-	
 	}
 	
 table.charinfo {
@@ -202,10 +208,17 @@ section#gallery aside {
 
 section#gallery aside a{
 	width: 15%;
-	margin: 2.5%;
+	margin: 1.9%;
 	height: 50px;
 	overflow: hidden;
 	float: left;
+	transition: all .5s;
+	border: 2px solid #e8e0a4;
+
+}
+
+section#gallery aside a:hover {
+	border: 2px solid #ffbb00;
 }
 
 section#gallery aside a img {
@@ -225,18 +238,32 @@ section#gallery aside a img {
 .full {
 	width: 100%
 }
+
+.bigimage {
+	float: left;
+	margin: 0 0 2.5em 0;
+}
+
+.bigimage img {
+	float: left;
+	margin: 0 0 2.5em 0;
+	border: 2px solid #ffbb00;
+	border-bottom: none;
+}
+
+
 /***************** Home *****************/
 
-section.home {
+section#home {
 	float: left;
 }
 
-section.home img {
+section#home img {
 	margin: 10% 15% 0% 15%;
 	width: 70%;
 }
 
-section.home p {
+section#home p {
 	margin: 0 15%;
 	width: 70%;
 	font-size: 1.5em;
@@ -255,5 +282,28 @@ section.videos video {
 	margin: 4%;
 	-webkit-box-reflect: below 5% -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.6, transparent), to(white));
 }
+
+@media screen and (max-width: 768px) {
+
+	.characters li {
+		width: 46%;
+	}
+	
+	section#gallery aside a{
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.characters li {
+		width: 100%;
+		margin: inherit 0;
+	}
+	
+	section#gallery aside a{
+		width: 28%;
+	}
+}
+
 
 

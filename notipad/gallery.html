@@ -49,6 +49,9 @@
 		<div class="container">
 		<article>
 			<section id="gallery">
+				<aside class="bigimage">
+					<img />
+				</aside>
 				<aside class="thumbnail">
 					<a><img src="../img/gallery/hobbit001.jpg" /></a>
 					<a><img src="../img/gallery/hobbit002.jpg" /></a>
@@ -76,7 +79,19 @@
 				</aside>
 		</article>	
 		</div>
+<!-- Jquerry -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$('.thumbnail a img').on('click', function(){
+			$('.bigimage img').attr('src',$(this).attr('src')).addClass('galleryviewer');
+		});
+		
+		$('.thumbnail a img:first-of-type').trigger('click');
+	});
+</script>
 	</body>
 	
 </html>
