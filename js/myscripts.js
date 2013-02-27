@@ -35,6 +35,7 @@ function checkDevice(){
 function checkiPadStandAlone(){
 	if(window.navigator.standalone == false) {
 		$('.container').css('display','none');
+		$('body').load('installapp.html')
 	}
 }
 

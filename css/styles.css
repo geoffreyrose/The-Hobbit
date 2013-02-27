@@ -1,3 +1,18 @@
+body {
+	background: #e8e0a4;
+}
+
+.howto li {
+	list-style-type: decimal;
+	margin: 0 0 1em 2em;
+}
+
+.install {
+	margin: 5em 15%;	
+	float: none;
+	width: 70%
+}
+
 .container {
 	width: 100%;
 	float: left;
