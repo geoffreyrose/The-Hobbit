@@ -1,0 +1,259 @@
+.container {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1000px;
+
+}
+
+article {
+	background: #e8e0a4;
+	float: left;
+	width: 93.5%;
+	padding: 0 3.25%;
+	font-family: 'GriffosFontRegular';
+	
+}
+
+.content_loading_container {
+		padding: 3.25% 0;
+		float: left;
+		width: 93.5%
+}
+
+
+
+header {
+	width: 100%;
+}
+
+nav {
+	background:
+		-webkit-linear-gradient(top, #38300a 0%, #272000 50.66%);
+	float: left;
+	width: 94%;
+	padding: 3.25%;
+	border-bottom: 10px solid #ffbb00;
+	
+}
+
+
+
+nav ul {
+	display: block;
+	float: left;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	padding: 2.5% 1em 2.5% 0;
+	text-decoration: none;
+	color: #f5d313;
+	font-size: 1.5em;
+	font-family: 'KingthingsCalligraphica2Rg', serif;
+}
+
+nav ul li a span {
+	font-size: .8em;
+	margin:  0 .35em 0 0;
+
+}
+
+.socialmedia {
+	float: right;
+}
+
+.socialmedia li a {
+	float: right;
+	padding: 2.5% .125em;
+}
+
+/** Typography **/
+h1, h2, h3, h4, h5, h6 { 
+font-family: 'KingthingsCalligraphica2Rg', serif;
+
+
+}
+
+h1 {
+	font-size: 3.5em;
+	margin: 0 0 .2em 0;	
+	clear: both;
+}
+
+h2 {
+	font-size: 2.0em;
+	margin: 1em 0 .25em 0;
+
+}
+
+h3 {
+	
+}
+
+h4 {
+	
+}
+
+h5 {
+	
+}
+
+h6 {
+	
+}
+
+p {
+	font-size: 1.25em;
+	margin:  0 0 2% 0;
+	line-height: 1.6em;
+
+}
+/***************** Characters *****************/
+.characters {
+	width: 100%;
+}
+
+.characters li {
+	display: block;
+	
+		
+}
+
+.characters li {
+	font-size: 1.5em;
+	width: 30%;
+	float: left;
+	margin: 0 3% 2% 0;
+	text-align: center;
+	
+}
+
+
+.characters li span {
+	overflow: hidden;
+	height: 125px;
+	display: block;
+	margin: 0 0 .2em 0;
+	border: 2px solid #000;
+	
+}
+.characters li span img {
+	width: 100%;
+	clear: both;
+}
+ 
+
+.charimg {
+	width: 25%;
+	margin: 0 2% 2% 0;
+	float: left;
+	border: 2px solid #ffbb00;
+	border-bottom: none;
+	-webkit-box-reflect: below -2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.8, transparent), to(white));
+	
+	}
+	
+table.charinfo {
+	clear: both;
+	width: 100%;
+	margin: 5em 0 0 0;
+	float: left
+}
+
+table.charinfo thead {
+	background: #000;
+	color: #ffbb00;
+	text-align: left;
+}	
+
+table.charinfo thead tr th {
+	padding: .5em;	
+	width: 25%;
+	font-size: 1.25em;
+}
+
+
+table.charinfo tbody {
+	background: #aaa;
+	color: #000;
+	text-align: left;
+}	
+
+table.charinfo tbody tr td {
+	padding: .5em;	
+	width: 25%;
+	font-size: 1.25em;
+}
+
+
+
+/***************** Gallery *****************/
+
+section#gallery {
+	float: left;
+}
+
+section#gallery aside {
+	float: left;
+}
+
+section#gallery aside a{
+	width: 15%;
+	margin: 2.5%;
+	height: 50px;
+	overflow: hidden;
+	float: left;
+}
+
+section#gallery aside a img {
+	width: 100%;
+	float: left;
+}
+
+.galleryviewer {
+	width: 100%;
+	float: left;
+	-webkit-box-reflect: below -2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.8, transparent), to(white));
+}
+.reflect {
+	
+}
+
+.full {
+	width: 100%
+}
+/***************** Home *****************/
+
+section.home {
+	float: left;
+}
+
+section.home img {
+	margin: 10% 15% 0% 15%;
+	width: 70%;
+}
+
+section.home p {
+	margin: 0 15%;
+	width: 70%;
+	font-size: 1.5em;
+	text-align: center;
+	
+}
+
+/***************** Videos *****************/
+section.videos {
+	float: left;
+	width: 100%;
+}
+	
+section.videos video {
+	float: left;
+	margin: 4%;
+	-webkit-box-reflect: below 5% -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.6, transparent), to(white));
+}
+
+
