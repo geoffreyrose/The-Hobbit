@@ -1,3 +1,15 @@
+a.backto:link, a.backto:visited {
+	font-size: 1.25em;
+	color: black;
+	margin: 2em 0;
+	text-decoration: none;
+	display: block;
+	float: left;
+}
+
+a.backto:hover, a.backto:active, a.backto:focus {
+	color: #fb0;
+} 
 body {
 	background: #e8e0a4;
 }
@@ -41,7 +53,6 @@ nav {
 	padding: 3.25%;
 	border-bottom: 10px solid #ffbb00;
 	margin: 0 auto;
-	
 }
 
 
@@ -138,7 +149,19 @@ p {
 	text-align: center;
 	
 }
+.characters li a:link, .characters li a:visited {
+	text-decoration: none;
+	color: #000;
+	transition: all .5s;
+}
 
+.characters li a:hover, .characters li a:active, .characters li a:focus {
+	color: #fb0;
+}
+
+.characters li a:hover span {
+	border: 2px solid #ffbb00;
+}
 .characters li span {
 	overflow: hidden;
 	height: 125px;
@@ -204,6 +227,7 @@ section#gallery {
 
 section#gallery aside {
 	float: left;
+	width: 100%
 }
 
 section#gallery aside a{
@@ -290,19 +314,112 @@ section.videos video {
 	}
 	
 	section#gallery aside a{
-		width: 20%;
+		width: 28%;
+	}
+	.charimg {
+		width: 50%;
+	}
+	
+	header {
+		float: left;
+		overflow: hidden;
+	}
+	
+	header nav {
+		float: left;
+
+		
+	}
+	
+	header nav ul {
+		width: 100%;
+		
+	}
+	
+	header nav ul li {
+		float: none;
+		width: 100%;
+		
+	}
+	
+	header nav ul li a {
+		width: 40%;
+		display: block;
+		padding: 5%;
+		text-align: center;
+		float: left;
+	}
+	
+
+	
+	header nav ul.socialmedia  {
+		float: right;
+		width: 40%;
+		margin: -10% 3% 0 0;
+	}
+	
+	header nav ul.socialmedia  li {
+		float: left;
+		width: 33%;
+		
+	}
+	
+	header nav ul.socialmedia  li a {
+		float: left;
+		display: block;
+		padding: 0;
+		margin: 0; 
+		text-align: center;
+
 	}
 }
 
-@media screen and (max-width: 540px) {
+ #mobilenav {
+	 	display: none;
+		 
+	 }
+@media screen and (max-width: 580px) {
 	.characters li {
 		width: 100%;
 		margin: inherit 0;
 	}
 	
 	section#gallery aside a{
-		width: 28%;
+		width: 45%;
 	}
+	.charimg {
+		width: 100%;
+		margin-bottom: 3em;
+	}
+	
+	header nav ul li a {
+		width: 100%;
+		padding: 0 5% 1.5em 0;
+	}
+	
+	header nav ul.socialmedia  {
+		float: right;
+		width: 40%;
+		margin: 0;
+	}
+	
+	header nav ul.socialmedia {
+		float: none;
+		margin: 0 auto;
+	}
+	
+	
+	/*** Mobile Nav **/
+	 #mobilenav {
+	 	display: inline;
+		 
+	 }
+	 
+	 .mobileheader {
+	 	margin: -18em 0 0 0;
+		 
+	 }
+	
 }
 
 
