@@ -419,7 +419,69 @@ section.videos video {
 	 	margin: -18em 0 0 0;
 		 
 	 }
+	 video {
+		 max-width: 400px;
+		 width: 100%;
+		 }
+		 
+		 
+		/********************* char info Table *********************/
 	
+	table, thead, tbody, th, td, tr, tfoot { 
+		display: block; 
+	}
+	
+	table.charinfo {
+		margin: -3% 0 8.5% 0;
+	}
+	
+	table.charinfo thead {
+		
+	}
+	
+	table.charinfo thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	table.charinfo thead tr {
+
+	}
+	
+	table.charinfo thead tr th {
+		padding: 1.2% 1.5%;
+	}
+	
+	table.charinfo tbody {
+		
+	}
+	
+	
+	
+	table.charinfo tbody tr td {
+		width: 100%;
+		text-align: center;
+		padding: 0 0 .5em 0;
+	}
+	
+	table.charinfo tbody tr td:before {
+		width: 100%;
+		padding: .5em 0;
+		display: block;
+		float: left;
+		background: #000;
+		color: #ffbb00;
+		text-align: center;
+		margin: 0 0 .5em 0;
+	}
+	
+	table.charinfo tr td:nth-of-type(1):before { content: "Race"; }
+	table.charinfo tr td:nth-of-type(2):before { content: "Culture"; }
+	table.charinfo tr td:nth-of-type(3):before { content: "Gender"; }
+	table.charinfo tr td:nth-of-type(4):before { content: "Actor"; }
+
+
 }
 
 
