@@ -1,3 +1,34 @@
+<script type="text/javascript">
+
+var myScroll;
+function loaded() {
+	myScroll = new iScroll('scroll',{checkDOMChanges:true});
+}
+	
+$(document).ready(function(){
+
+	$('ul.charnav li a').on('click', function(){
+		changeCharacters($(this).attr('data-characters'));
+		});
+		
+	$('ul.charnav li a').on('click', function(){
+		changePage($(this).attr('data-file'));
+		});
+	
+
+});
+
+function changeCharacters(CharName){
+	$('.content_container').animate({opacity:0}, 500, function(){
+		// load content
+		$('.content_loading_container').load('pages/characters/'+CharName, function(){
+			$('.content_container').delay(250).animate({opacity:1}, 500);
+		});
+	});
+}
+
+</script>
+</script>
 <h1>Dori</h1>
 <section>
 <img class="charimg" src="img/characters/dori.jpg" alt="Dori the Dwarf" />
@@ -24,3 +55,9 @@
 		</tr>
 	</tbody>
 </table>
+
+<ul class="charnav">
+	<li><a data-characters="bombur.html?v=1">Previous</a></li>
+	<li><a data-file="characters.html?v=1">Characters</a></li>
+	<li><a data-characters="dwalin.html?v=1">Next</a></li>
+</ul>

@@ -24,8 +24,8 @@ body {
 article {
 	background: #e8e0a4;
 	float: left;
-	width: 94%;
-	padding: 0 3.25%;
+	width: 93.333333%;
+	padding: 0 3.333333%;
 	font-family: 'GriffosFontRegular';
 	overflow: hidden;
 }
@@ -33,7 +33,7 @@ article {
 .content_loading_container {
 		padding: 3.25% 0;
 		float: left;
-		width: 93.5%
+		width: 92%
 }
 
 section {
@@ -166,7 +166,7 @@ p {
  
 
 .charimg {
-		width: 25%;
+		width: 35%;
 		margin: 0 2% 2% 0;
 		float: left;
 		border: 2px solid #ffbb00;
@@ -207,8 +207,22 @@ table.charinfo tbody tr td {
 	font-size: 1.25em;
 }
 
+ul.charnav {
+	width: 100%;
+	float: left;
+	margin: 3.5em 0 0 0;	
+}
 
+ul.charnav li {
+	width: 33%;
+	float: left;
+	text-align: center;
+}
 
+ul.charnav li a {
+	font-size: 1.25em;
+	text-align: center;
+}
 /***************** Gallery *****************/
 
 section.gallery {
@@ -280,7 +294,7 @@ section.videos {
 	
 section.videos video {
 	float: left;
-	margin: 4%;
+	margin: 3.8%;
 	-webkit-box-reflect: below 5% -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.6, transparent), to(white));
 }
 
@@ -315,6 +329,11 @@ section.videos video {
 	width: 15%;
 }
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+
+	article {
+		width: 92%;
+		padding: 0 4%;
+	}
 	
 	.content_container {
 		height: 966px;
@@ -338,7 +357,7 @@ section.videos video {
 	}
 	
 	.characters li a {
-		width: 48.5%;
+		width: 48.58%;
 		margin: 0 3% 2% 0;
 	
 	}

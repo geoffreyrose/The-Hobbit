@@ -46,6 +46,7 @@ header {
 }
 
 nav {
+	background: #38300a;
 	background:
 		-webkit-linear-gradient(top, #38300a 0%, #272000 50.66%);
 		max-width: 1000px;
