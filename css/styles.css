@@ -24,8 +24,8 @@ body {
 article {
 	background: #e8e0a4;
 	float: left;
-	width: 93.333333%;
-	padding: 0 3.333333%;
+	width: 90.333333%;
+	padding: 0 5.333333%;
 	font-family: 'GriffosFontRegular';
 	overflow: hidden;
 }
@@ -279,8 +279,8 @@ section.home img {
 }
 
 section.home p {
-	margin: 0 15%;
-	width: 70%;
+	margin: 0 5%;
+	width: 85%;
 	font-size: 1.5em;
 	text-align: center;
 	
@@ -328,6 +328,13 @@ section.videos video {
 	float: right;
 	width: 15%;
 }
+
+
+.synopsis p {
+	font-size: 1.35em;
+	line-height: 1.7em;
+	margin-bottom: 1.1em;
+	}
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 
 	article {

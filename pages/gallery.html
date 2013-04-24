@@ -1,41 +1,44 @@
-<section class="gallery">
-	<aside class="bigimage">
-		<img />
-	</aside>
-	<aside class="thumbnail">
-		<a href="#"><img src="img/gallery/hobbit001.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit002.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit003.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit004.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit005.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit006.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit007.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit008.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit009.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit010.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit011.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit012.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit013.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit014.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit015.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit016.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit017.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit018.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit019.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit020.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit021.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit022.jpg" /></a>
-		<a href="#"><img src="img/gallery/hobbit023.jpg" /></a>
-	</aside>
-</section>
-
 <script type="text/javascript">
-	$(document).ready(function() {
 
-		$('.thumbnail a img').on('click', function(){
-			$('.bigimage img').attr('src',$(this).attr('src')).addClass('galleryviewer');
-		});
-		
-		$('.thumbnail a img:first-of-type').trigger('click');
-	});
+	var galleries = $('.ad-gallery').adGallery();
+
 </script>
+	
+	<div class="ad-gallery">
+  <div class="ad-image-wrapper">
+  </div>
+  <div class="ad-controls">
+  </div>
+  <div class="ad-nav">
+    <div class="ad-thumbs">
+    	<ul class="ad-thumb-list">
+		<li><a href="img/gallery/hobbit001.jpg"><img src="img/gallery/hobbit001.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit002.jpg"><img src="img/gallery/hobbit002.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit003.jpg"><img src="img/gallery/hobbit003.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit004.jpg"><img src="img/gallery/hobbit004.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit005.jpg"><img src="img/gallery/hobbit005.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit006.jpg"><img src="img/gallery/hobbit006.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit007.jpg"><img src="img/gallery/hobbit007.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit008.jpg"><img src="img/gallery/hobbit008.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit009.jpg"><img src="img/gallery/hobbit009.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit010.jpg"><img src="img/gallery/hobbit010.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit011.jpg"><img src="img/gallery/hobbit011.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit012.jpg"><img src="img/gallery/hobbit012.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit013.jpg"><img src="img/gallery/hobbit013.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit014.jpg"><img src="img/gallery/hobbit014.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit015.jpg"><img src="img/gallery/hobbit015.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit016.jpg"><img src="img/gallery/hobbit016.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit017.jpg"><img src="img/gallery/hobbit017.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit018.jpg"><img src="img/gallery/hobbit018.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit019.jpg"><img src="img/gallery/hobbit019.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit020.jpg"><img src="img/gallery/hobbit020.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit021.jpg"><img src="img/gallery/hobbit021.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit022.jpg"><img src="img/gallery/hobbit022.jpg" /></a></li>
+		<li><a href="img/gallery/hobbit023.jpg"><img src="img/gallery/hobbit023.jpg" /></a></li>
+	</ul>
+      
+    </div>
+  </div>
+</div>
+
+
