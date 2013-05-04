@@ -11,10 +11,11 @@
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.ad-gallery.css" />
 		
 		<!-- Fav Icon -->
 		<link rel="icon" type="image/png" href="favicon.ico" />
-		<link type="text/css" rel="apple-touch-icon-precomposed" href="../img/icon.png" />
+		<link type="text/css" rel="apple-touch-icon-precomposed" href="../../img/icon.png" />
 		
 		<!-- Web Fonts -->
 		<link href='../fonts/kingthings/stylesheet.css' rel='stylesheet' type='text/css' /><!--http://www.fontsquirrel.com/fonts/Kingthings-Calligraphica-->
@@ -26,6 +27,20 @@
 			<link rel="stylesheet" type="text/css" href="css/iestyles.css" />
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		
+		
+	<!-- Jquerry -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	
+	<!-- Custom Script -->
+	<script type="text/javascript" src="js/myscripts.js"></script>
+	<script type="text/javascript" src="js/jquery.ad-gallery.js"></script>
+	 <script type="text/javascript">
+  $(function() {
+    var galleries = $('.ad-gallery').adGallery();
+  });
+  </script>
+	
 		
 	</head>
 	
@@ -49,56 +64,50 @@
 		</header>
 		<div class="container">
 		<article>
-			<section id="gallery">
-				<aside class="bigimage">
-					<img />
-				</aside>
-				<aside class="thumbnail">
-					<a><img src="../img/gallery/hobbit001.jpg" /></a>
-					<a><img src="../img/gallery/hobbit002.jpg" /></a>
-					<a><img src="../img/gallery/hobbit003.jpg" /></a>
-					<a><img src="../img/gallery/hobbit004.jpg" /></a>
-					<a><img src="../img/gallery/hobbit005.jpg" /></a>
-					<a><img src="../img/gallery/hobbit006.jpg" /></a>
-					<a><img src="../img/gallery/hobbit007.jpg" /></a>
-					<a><img src="../img/gallery/hobbit008.jpg" /></a>
-					<a><img src="../img/gallery/hobbit009.jpg" /></a>
-					<a><img src="../img/gallery/hobbit010.jpg" /></a>
-					<a><img src="../img/gallery/hobbit011.jpg" /></a>
-					<a><img src="../img/gallery/hobbit012.jpg" /></a>
-					<a><img src="../img/gallery/hobbit013.jpg" /></a>
-					<a><img src="../img/gallery/hobbit014.jpg" /></a>
-					<a><img src="../img/gallery/hobbit015.jpg" /></a>
-					<a><img src="../img/gallery/hobbit016.jpg" /></a>
-					<a><img src="../img/gallery/hobbit017.jpg" /></a>
-					<a><img src="../img/gallery/hobbit018.jpg" /></a>
-					<a><img src="../img/gallery/hobbit019.jpg" /></a>
-					<a><img src="../img/gallery/hobbit020.jpg" /></a>
-					<a><img src="../img/gallery/hobbit021.jpg" /></a>
-					<a><img src="../img/gallery/hobbit022.jpg" /></a>
-					<a><img src="../img/gallery/hobbit023.jpg" /></a>
-				</aside>
+		<section>
+	
+	<div class="ad-gallery">
+  <div class="ad-image-wrapper">
+  </div>
+  <div class="ad-controls">
+  </div>
+  <div class="ad-nav">
+    <div class="ad-thumbs">
+    	<ul class="ad-thumb-list">
+		<li><a href="../img/gallery/hobbit001.jpg"><img src="../img/gallery/hobbit001.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit002.jpg"><img src="../img/gallery/hobbit002.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit003.jpg"><img src="../img/gallery/hobbit003.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit004.jpg"><img src="../img/gallery/hobbit004.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit005.jpg"><img src="../img/gallery/hobbit005.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit006.jpg"><img src="../img/gallery/hobbit006.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit007.jpg"><img src="../img/gallery/hobbit007.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit008.jpg"><img src="../img/gallery/hobbit008.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit009.jpg"><img src="../img/gallery/hobbit009.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit010.jpg"><img src="../img/gallery/hobbit010.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit011.jpg"><img src="../img/gallery/hobbit011.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit012.jpg"><img src="../img/gallery/hobbit012.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit013.jpg"><img src="../img/gallery/hobbit013.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit014.jpg"><img src="../img/gallery/hobbit014.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit015.jpg"><img src="../img/gallery/hobbit015.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit016.jpg"><img src="../img/gallery/hobbit016.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit017.jpg"><img src="../img/gallery/hobbit017.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit018.jpg"><img src="../img/gallery/hobbit018.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit019.jpg"><img src="../img/gallery/hobbit019.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit020.jpg"><img src="../img/gallery/hobbit020.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit021.jpg"><img src="../img/gallery/hobbit021.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit022.jpg"><img src="../img/gallery/hobbit022.jpg" /></a></li>
+		<li><a href="../img/gallery/hobbit023.jpg"><img src="../img/gallery/hobbit023.jpg" /></a></li>
+	</ul>
+      
+    </div>
+  </div>
+</div>
+		</section>
 		</article>	
 		</div>
-<!-- Jquerry -->
-		<!-- Jquerry -->
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	
-	
-	<!-- Custom Script -->
-	<script type="text/javascript" src="js/myscripts.js"></script>
 
 
-<script type="text/javascript">
-	$(document).ready(function() {
 
-		$('.thumbnail a img').on('click', function(){
-			$('.bigimage img').attr('src',$(this).attr('src')).addClass('galleryviewer');
-		});
-		
-		$('.thumbnail a img:first-of-type').trigger('click');
-	});
-</script>
 	</body>
 	
 </html>

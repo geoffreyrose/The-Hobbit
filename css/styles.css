@@ -24,16 +24,16 @@ body {
 article {
 	background: #e8e0a4;
 	float: left;
-	width: 90.333333%;
-	padding: 0 5.333333%;
+	width: 90%;
+	padding: 0 5%;
 	font-family: 'GriffosFontRegular';
 	overflow: hidden;
 }
 
 .content_loading_container {
-		padding: 3.25% 0;
+		padding: 5% 0;
 		float: left;
-		width: 92%
+		width: 90%
 }
 
 section {
@@ -174,7 +174,12 @@ p {
 		-webkit-box-reflect: below -2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.8, transparent), to(white));
 		
 	}
-	
+
+.charimg~p {
+	width: 61%;
+	float: right;	
+}	
+
 table.charinfo {
 	clear: both;
 	width: 100%;
@@ -294,7 +299,7 @@ section.videos {
 	
 section.videos video {
 	float: left;
-	margin: 3.8%;
+	margin: 3.3%;
 	-webkit-box-reflect: below 5% -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.6, transparent), to(white));
 }
 
@@ -338,8 +343,8 @@ section.videos video {
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 
 	article {
-		width: 92%;
-		padding: 0 4%;
+		width: 90%;
+		padding: 0 5%;
 	}
 	
 	.content_container {
